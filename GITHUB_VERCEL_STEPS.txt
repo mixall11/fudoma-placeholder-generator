@@ -1,0 +1,152 @@
+═══════════════════════════════════════════════════════════════════════════════
+  🚀 FUDOMA PLACEHOLDER GENERATOR - GITHUB → VERCEL DEPLOY (3 KROKY)
+═══════════════════════════════════════════════════════════════════════════════
+
+KEĎ CHCEŠ RÝCHLO PUSHNÚŤ NA INTERNET:
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 1: GITHUB (5 MINÚT)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Choď na https://github.com
+2. Prihlás sa (alebo vytvor účet - FREE)
+3. Klikni "+" → "New repository"
+4. Nazvi to: fudoma-placeholder-generator
+5. Vyber "Public"
+6. Klikni "Create repository"
+7. Skopíruj si URL (viď nižšie)
+
+VÝSLEDOK: https://github.com/TVOJE_MENO/fudoma-placeholder-generator
+
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 2: LOKÁLNY POČÍTAČ (5 MINÚT)
+═══════════════════════════════════════════════════════════════════════════════
+
+Otvoriť Terminal/Command Prompt a spustiť PRESNE TIETO PRÍKAZY:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ # 1. Skopíruj projekt                                                       │
+│ cp -r /home/claude/vercel-project ~/fudoma-placeholder-generator            │
+│ cd ~/fudoma-placeholder-generator                                           │
+│                                                                              │
+│ # 2. Nainštaluj dependencies                                                │
+│ npm install                                                                 │
+│                                                                              │
+│ # 3. Testuj lokálne (VOLITEĽNÉ)                                              │
+│ npm run dev                                                                 │
+│ # Otvori http://localhost:3000 - skontroluj že funguje                     │
+│ # Potom Ctrl+C aby sa zastavil                                              │
+│                                                                              │
+│ # 4. Git setup                                                              │
+│ git init                                                                    │
+│ git config user.name "Tvoje Meno"                                          │
+│ git config user.email "tvoj@email.com"                                     │
+│ git add .                                                                   │
+│ git commit -m "Initial commit"                                             │
+│                                                                              │
+│ # 5. NAHRAĎ NÍŽE: TVOJE_MENO a REPO_MENO                                     │
+│ git remote add origin https://github.com/TVOJE_MENO/fudoma-placeholder-generator.git
+│ git branch -M main                                                          │
+│ git push -u origin main                                                     │
+│                                                                              │
+│ # Ak ti Git pýta heslo, vlož GitHub personal access token!                 │
+│ # (vidíš nižšie ako ho vytvoriť)                                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VÝSLEDOK: Projekt je na GitHub (vidíš ho na https://github.com/TVOJE_MENO/...)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+AK TI GIT POŽIADA HESLO - VYTVOR SI TOKEN
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Choď na https://github.com/settings/tokens
+2. Klikni "Generate new token"
+3. Vyber "Personal access token (classic)"
+4. Vygeneru sa ti token: ghp_xxxxxxxxxxxxxx
+5. Skopíruj si ho (NEPOS, NEPUBLISH!)
+6. Keď Git pýta heslo, vlož tento token
+
+HOTOVO! 🎉
+
+
+═══════════════════════════════════════════════════════════════════════════════
+KROK 3: VERCEL (5 MINÚT)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Choď na https://vercel.com
+2. Klikni "Sign Up"
+3. Vyber "Continue with GitHub"
+4. Autorizuj Vercel
+5. Klikni "Add New" → "Project"
+6. Vyber "Import Git Repository"
+7. Nájdi svoj repo "fudoma-placeholder-generator"
+8. Klikni "Import"
+9. Vercel automaticky detekuje nastavenia
+10. Klikni "Deploy"
+11. ČAKAJ - vidíš progesbar (1-2 minúty)
+12. ✅ Deployment successful = HOTOVO!
+
+VÝSLEDOK: https://fudoma-placeholder-generator.vercel.app
+
+
+═══════════════════════════════════════════════════════════════════════════════
+✅ VERIFIKÁCIA - OTESTUJ
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Otvoriť URL z Vercelu v prehliadači
+2. Vidím "Fudoma Placeholder Generator" header? ✅
+3. Vidím karty s predvolenými veľkosťami? ✅
+4. Klikol som "Download" - stiahol sa PNG? ✅
+5. Obrázok má správne rozmery? ✅
+
+VŠETKO FUNGUJE? → GRATULUJEM! 🎊
+
+
+═══════════════════════════════════════════════════════════════════════════════
+BONUS: AUTOMATICKÉ UPDATES
+═══════════════════════════════════════════════════════════════════════════════
+
+Najlepšia časť: VŠETKO JE AUTOMATICKÉ!
+
+Keď chceš zmeniť niečo (farby, veľkosti, design):
+
+  git add .
+  git commit -m "Update: new colors"
+  git push origin main
+
+  → Vercel SEE → Vercel BUILD → Vercel DEPLOY
+  → Za 2-3 minúty je to LIVE! 🚀
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PROBLÉM? TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+"Build failed on Vercel"
+→ Skontroluj Build Logs v Vercel dashboarde
+→ Spusti lokálne: npm run build
+→ Pozri chyby v Console
+
+"Cannot connect to GitHub"
+→ Regeneruj nový Personal Access Token
+→ Alebo nastavuj SSH key
+
+"npm: command not found"
+→ Nainštaluj Node.js: https://nodejs.org
+
+"Port 3000 je obsadený"
+→ npm run dev -- --port 3001
+
+
+═══════════════════════════════════════════════════════════════════════════════
+🎉 HOTOVO!
+═══════════════════════════════════════════════════════════════════════════════
+
+Tvoja aplikácia je LIVE na internete!
+
+URL: https://fudoma-placeholder-generator.vercel.app
+GitHub: https://github.com/TVOJE_MENO/fudoma-placeholder-generator
+
+Pošli URL svojmu tímu a všetci môžu generovať placeholder obrázky! 🚀

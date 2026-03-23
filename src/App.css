@@ -1,0 +1,50 @@
+.app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    padding: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .app {
+        background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+    }
+}
+
+/* Smooth transitions */
+* {
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d3d1c7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888780;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-thumb {
+        background: #444441;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #666;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .app {
+        padding: 1rem;
+    }
+}
